@@ -2,26 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScriptableItem : ScriptableObjects
+[CreateAssetMenu(fileName = "New Item", menuName = "Item/New Item")]
+public class ScriptableItem : ScriptableObject
 {
 
-    public enum item
+    public enum ItemType
     {
         Item,
         Armor,
         Weapon
     }
 
-    public string ScriptableText;
-    public string Scri
-    public int 
+    public ItemType itemType;
 
-
-
-    void Start()
-    {
-        
-    }
-
+    public string itemName;
+    public string itemDescription;
+    public int itemPrince;
+    public Sprite itemSprite;
 
 }
